@@ -2048,3 +2048,650 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 1706900204068	geckodriver	INFO	Listening on 127.0.0.1:52053
 1706900204079	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileKTFzDu"
 1706900211564	geckodriver	INFO	Listening on 127.0.0.1:52153
+1706954313349	geckodriver	INFO	Listening on 127.0.0.1:52422
+1706954313863	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52423" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileOLo2Tv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954314154	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954314231	Marionette	INFO	Listening on port 52428
+WebDriver BiDi listening on ws://127.0.0.1:52423
+Read port: 52428
+1706954314363	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52423/devtools/browser/1ea21ec4-ac3b-4b6c-b912-b5ca67ea3fd1
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954345260	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954515990	Marionette	INFO	Stopped listening on port 52428
+Dynamically enable window occlusion 1
+"52472" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileA7lfPY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954431141	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954431219	Marionette	INFO	Listening on port 52477
+WebDriver BiDi listening on ws://127.0.0.1:52472
+Read port: 52477
+1706954431356	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52472/devtools/browser/f1a06ef6-73c9-449a-b155-05c871810a73
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954462966	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954517914	Marionette	INFO	Stopped listening on port 52477
+Dynamically enable window occlusion 1
+tting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954461208	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954461297	Marionette	INFO	Listening on port 52519
+WebDriver BiDi listening on ws://127.0.0.1:52514
+Read port: 52519
+1706954461444	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52514/devtools/browser/6bcc2b8f-b327-4c4f-aab8-f9f8b7f1287e
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954492079	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954518234	Marionette	INFO	Stopped listening on port 52519
+Dynamically enable window occlusion 1
+1706954549356	geckodriver	INFO	Listening on 127.0.0.1:52579
+1706954549868	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52580" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileL5RkU2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954550172	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954550251	Marionette	INFO	Listening on port 52589
+WebDriver BiDi listening on ws://127.0.0.1:52580
+Read port: 52589
+1706954550396	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52580/devtools/browser/8c644da4-627f-4158-8871-ea2332db1a65
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954581264	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+NFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52629" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofilereljRz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954599324	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954599402	Marionette	INFO	Listening on port 52634
+WebDriver BiDi listening on ws://127.0.0.1:52629
+Read port: 52634
+1706954599536	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52629/devtools/browser/c9e12098-e4b9-468f-a3c0-1e66f4e213cb
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1706954608499	geckodriver	INFO	Listening on 127.0.0.1:52666
+1706954609004	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52667" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofilesDqdhJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954609306	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954609386	Marionette	INFO	Listening on port 52672
+WebDriver BiDi listening on ws://127.0.0.1:52667
+Read port: 52672
+1706954609532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52667/devtools/browser/59ae7d4a-31f6-4111-8989-7d3457b70079
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954640417	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954709805	Marionette	INFO	Stopped listening on port 52672
+Dynamically enable window occlusion 1
+emp\\rust_mozprofile9VyRbV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954667975	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954668051	Marionette	INFO	Listening on port 52718
+WebDriver BiDi listening on ws://127.0.0.1:52713
+Read port: 52718
+1706954668178	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52713/devtools/browser/4357dc6e-eed0-4e55-9ddd-f01d53824cf8
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954698000	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954710044	Marionette	INFO	Stopped listening on port 52718
+Dynamically enable window occlusion 1
+1706954711655	geckodriver	INFO	Listening on 127.0.0.1:52758
+1706954712177	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52759" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileHvXK70"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954712458	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954712533	Marionette	INFO	Listening on port 52764
+WebDriver BiDi listening on ws://127.0.0.1:52759
+Read port: 52764
+1706954712663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52759/devtools/browser/dfaea0c6-a494-4b85-9361-31c6a77f9444
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954742513	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955137584	Marionette	INFO	Stopped listening on port 52764
+Dynamically enable window occlusion 1
+emp\\rust_mozprofilecLIgGf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954759690	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954759764	Marionette	INFO	Listening on port 52824
+WebDriver BiDi listening on ws://127.0.0.1:52819
+Read port: 52824
+1706954759891	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52819/devtools/browser/6780b37a-5bc7-4b7c-9beb-0b093e1b13ac
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954789895	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955137844	Marionette	INFO	Stopped listening on port 52824
+Dynamically enable window occlusion 1
+"52886" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofilekzHeAY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954837933	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954838014	Marionette	INFO	Listening on port 52891
+WebDriver BiDi listening on ws://127.0.0.1:52886
+Read port: 52891
+1706954838167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52886/devtools/browser/25fa4188-c19d-4673-ab05-175715848c45
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954868596	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955138072	Marionette	INFO	Stopped listening on port 52891
+Dynamically enable window occlusion 1
+"52933" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileCkOeQO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954906175	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706954906253	Marionette	INFO	Listening on port 52938
+WebDriver BiDi listening on ws://127.0.0.1:52933
+Read port: 52938
+1706954906386	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52933/devtools/browser/5fcd950a-d499-4a04-bf07-1c9e41d5ae75
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706954936435	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955138337	Marionette	INFO	Stopped listening on port 52938
+Dynamically enable window occlusion 1
+"52980" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileUih4Nf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955015974	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955016051	Marionette	INFO	Listening on port 52985
+WebDriver BiDi listening on ws://127.0.0.1:52980
+Read port: 52985
+1706955016185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52980/devtools/browser/9f2332e3-f539-44db-bc90-0d934cdd77f8
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955046436	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955138781	Marionette	INFO	Stopped listening on port 52985
+Dynamically enable window occlusion 1
+emp\\rust_mozprofilec0aevb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955057360	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955057439	Marionette	INFO	Listening on port 53028
+WebDriver BiDi listening on ws://127.0.0.1:53023
+Read port: 53028
+1706955057583	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53023/devtools/browser/94b303ed-aeb6-488f-bc7b-23dc2551f1f6
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955087643	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955144135	Marionette	INFO	Stopped listening on port 53028
+Dynamically enable window occlusion 1
+"53066" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileVZruXv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955141578	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955141658	Marionette	INFO	Listening on port 53071
+WebDriver BiDi listening on ws://127.0.0.1:53066
+Read port: 53071
+1706955141785	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53066/devtools/browser/6a024fee-4b8d-4877-a7f3-f35f5df08a1b
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955171748	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955463771	Marionette	INFO	Stopped listening on port 53071
+Dynamically enable window occlusion 1
+"53129" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileEykEUU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955203897	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955203974	Marionette	INFO	Listening on port 53134
+WebDriver BiDi listening on ws://127.0.0.1:53129
+Read port: 53134
+1706955204102	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53129/devtools/browser/44805a6b-8517-4bf8-9214-045c4167c690
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955233991	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955464385	Marionette	INFO	Stopped listening on port 53134
+Dynamically enable window occlusion 1
+"53173" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileHgcrG9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955268340	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955268417	Marionette	INFO	Listening on port 53178
+WebDriver BiDi listening on ws://127.0.0.1:53173
+Read port: 53178
+1706955268546	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53173/devtools/browser/ea3a9ecc-6055-42e8-b071-8e4ef4a6ad61
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955298522	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955464635	Marionette	INFO	Stopped listening on port 53178
+Dynamically enable window occlusion 1
+"53229" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileA1bWLc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955345508	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955345585	Marionette	INFO	Listening on port 53234
+WebDriver BiDi listening on ws://127.0.0.1:53229
+Read port: 53234
+1706955345718	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53229/devtools/browser/c59e2d47-50e0-46f0-b582-ae2fd5c6b1ee
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955376603	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955465225	Marionette	INFO	Stopped listening on port 53234
+Dynamically enable window occlusion 1
+emp\\rust_mozprofile6dy8cC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955404787	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955404865	Marionette	INFO	Listening on port 53278
+WebDriver BiDi listening on ws://127.0.0.1:53273
+Read port: 53278
+1706955404997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53273/devtools/browser/d0996ab2-e20c-40ae-8ffc-87c79ad193a7
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955412487	Marionette	INFO	Stopped listening on port 53278
+Dynamically enable window occlusion 1
+1706955439503	geckodriver	INFO	Listening on 127.0.0.1:53311
+1706955440014	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53312" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileBNcG7y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955440305	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955440383	Marionette	INFO	Listening on port 53317
+WebDriver BiDi listening on ws://127.0.0.1:53312
+Read port: 53317
+1706955440517	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53312/devtools/browser/1e019f83-c22a-4f76-867d-8575de09722e
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955460270	Marionette	INFO	Stopped listening on port 53317
+Dynamically enable window occlusion 1
+"53352" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofileZzflTl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955453764	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955453841	Marionette	INFO	Listening on port 53357
+WebDriver BiDi listening on ws://127.0.0.1:53352
+Read port: 53357
+1706955453975	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53352/devtools/browser/b60257eb-0535-4497-a1ad-8ad5806e7381
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955457161	Marionette	INFO	Stopped listening on port 53357
+Dynamically enable window occlusion 1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955494695	geckodriver	INFO	Listening on 127.0.0.1:53392
+1706955495199	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53393" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofiledRF54g"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955495500	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706955495576	Marionette	INFO	Listening on port 53398
+WebDriver BiDi listening on ws://127.0.0.1:53393
+Read port: 53398
+1706955495706	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53393/devtools/browser/6502d41f-900b-4cfb-b997-b63e74ba51b7
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706955498616	Marionette	INFO	Stopped listening on port 53398
+Dynamically enable window occlusion 1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706957280358	geckodriver	INFO	Listening on 127.0.0.1:53646
+1706957280867	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53647" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\patri\\AppData\\Local\\Temp\\rust_mozprofiley1gcx7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706957281169	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706957281245	Marionette	INFO	Listening on port 53652
+WebDriver BiDi listening on ws://127.0.0.1:53647
+Read port: 53652
+1706957281378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53647/devtools/browser/d35e358c-7c75-4f7d-b25f-3286e749e2fb
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+JavaScript error: https://www.examinations.ie/js/sec.js, line 1: ReferenceError: $ is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."
+1706957284557	Marionette	INFO	Stopped listening on port 53652
+Dynamically enable window occlusion 1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.examinations.ie."

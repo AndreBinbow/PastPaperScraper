@@ -1,4 +1,6 @@
-
+import fitz
+import requests
+from io import BytesIO
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,14 +15,41 @@ import time
 import re
 import threading
 
-outputpath = 'output'
+output_path = 'output'
 papertype = "Exam Papers"
-subject = "Biology"
+subject = input("Subject: ")
 year = "2022"
 exam = "Leaving Certificate"
-searchterm = "lipid"
+searchterm = input("Search term: ")
 
+def download_pdf(url):
+    response = requests.get(url)
+    return BytesIO(response.content)
 
+# Function to search for a term and capture the page
+def search_and_capture_page(pdf_path, search_term, output_path, year):
+    pdf_document = fitz.open(pdf_path)
+    
+    for page_number in range(pdf_document.page_count):
+        page = pdf_document[page_number]
+        keyword_instances = page.search_for(search_term)
+
+        # Print the count of keyword instances on each page
+        print(f"Page {page_number + 1}, Keyword Instances: {len(keyword_instances)}")
+
+        if keyword_instances:
+            # Print the type of keyword_instances[0]
+            print(type(keyword_instances[0]))
+
+            # Get the Pixmap of the entire page
+            pixmap = page.get_pixmap()
+
+            # Write the Pixmap to a PNG file
+            screenshot_path = f"{output_path}/{year}_page_{page_number + 1}.png"
+            pixmap.save(screenshot_path)
+            print(f"Screenshot saved at: {screenshot_path}")    
+
+    pdf_document.close()
 
 
 def SearchPage(subject, year):
@@ -31,6 +60,8 @@ def SearchPage(subject, year):
 
     options = Options()
     options.binary_location = firefoxpath
+    options.add_argument("--headless=new")
+    options.add_argument('--disable-gpu')
 
     driver = webdriver.Firefox()
     driver.get(url)
@@ -97,79 +128,26 @@ def SearchPage(subject, year):
 
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'viewerContainer')))
 
-
-    span_elements = set()
-    iterations = 0
-    original_span_elements = 0
-    while True:
-        wait = WebDriverWait(driver, 10)
-
-        
-
-        # Wait for the presence of the textLayer element
-        text_layer = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'textLayer')))
-
-        # Extract text from all spans within the textLayer
-        spans = text_layer.find_elements(By.XPATH, '//span')
-        
-        current_span_elements = len(spans)
-        
-        time.sleep(.2)
-
-        # Collect unique span texts in the set
-        for span in spans:
-            try:
-                span_text = span.text.strip()
-                if len(span_text) > 1:
-                    #print(span_text)
-                    span_elements.add(span_text)
-            except StaleElementReferenceException:
-            # Handle StaleElementReferenceException by continuing to the next iteration
-                pass
-
-
-        
-        #print(spans)
-        print(len(spans))
-        
-        # Break the loop if no more content is loaded
-        if (original_span_elements == current_span_elements) and iterations > 2:
-            print(original_span_elements)
-            print(current_span_elements)
-            break
-
-        driver.find_element(by=By.TAG_NAME, value="body").send_keys(Keys.PAGE_DOWN * 5)
-        iterations += 1
-
-        original_span_elements = len(spans)
-
-
-    # Print unique span texts
-    #for span_text in span_elements:
-        #print(span_text)
-        
-
-
-
-
-    # Wait for some time to allow content to load after scrolling
-    time.sleep(.1)  # Adjust the sleep duration as needed
-
-    all_text = " ".join(span_elements)
-    sentences = re.split(r'\.+\s*', all_text)
-
-    #driver.quit()
+    pdf_url = driver.current_url
     
-    return sentences
+    pdf_content = download_pdf(pdf_url)
+
+    driver.quit()
+
+    # Save the PDF to a file (adjust file path as needed)
+    pdf_path = "downloaded_pdf.pdf"
+    with open(pdf_path, 'wb') as pdf_file:
+        pdf_file.write(pdf_content.getvalue())
+
+    # Search and capture pages
+    search_and_capture_page(pdf_path, searchterm, output_path, year)
+
+    
+
+SearchPage(subject, year)
 
 
-Search1page = SearchPage(subject, year)
-for i, sentence in enumerate(Search1page):
-    if searchterm in sentence:
-        start_idx = max(0, i - 1)
-        end_idx = min(len(Search1page), i + 1 + 1)
-        context = Search1page[start_idx:end_idx]
-        print(f"{year} Question + surrounding sentence: {' '.join(context)}")
+
         
 
 
