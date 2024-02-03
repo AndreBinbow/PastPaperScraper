@@ -11,16 +11,27 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import StaleElementReferenceException
 
+
 import time
 import re
 import threading
 
+
+
+
 output_path = 'output'
 papertype = "Exam Papers"
-subject = input("Subject: ")
+subject = input("Subject (case sensitive): ")
+#subject = "Biology"
 year = "2022"
 exam = "Leaving Certificate"
 searchterm = input("Search term: ")
+#searchterm = "diagram"
+numberofthreads = input("Number of threads (advanced setting, 2 is default):" )
+if numberofthreads != None:
+    semaphore = threading.BoundedSemaphore(value=int(numberofthreads))
+else:
+    semaphore = threading.BoundedSemaphore(value=4)
 
 def download_pdf(url):
     response = requests.get(url)
@@ -45,7 +56,7 @@ def search_and_capture_page(pdf_path, search_term, output_path, year):
             pixmap = page.get_pixmap()
 
             # Write the Pixmap to a PNG file
-            screenshot_path = f"{output_path}/{year}_page_{page_number + 1}.png"
+            screenshot_path = f"{output_path}/{search_term}_in_{year}_page_{page_number + 1}.png"
             pixmap.save(screenshot_path)
             print(f"Screenshot saved at: {screenshot_path}")    
 
@@ -53,98 +64,120 @@ def search_and_capture_page(pdf_path, search_term, output_path, year):
 
 
 def SearchPage(subject, year):
+    with semaphore:
+        firefoxpath = 'D:\\Program Files\\Mozilla Firefox\\firefox.exe'
+        chromepath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+        url = 'https://www.examinations.ie/exammaterialarchive/'
 
-    firefoxpath = 'D:\\Program Files\\Mozilla Firefox\\firefox.exe'
-    #geckodriver_path = 'D:\\Downloads\\geckodriver-v0.32.2-win64\\geckodriver.exe'
-    url = 'https://www.examinations.ie/exammaterialarchive/'
+        options = Options()
+        options.binary = r'D:\Program Files\Mozilla Firefox\firefox.exe'
 
-    options = Options()
-    options.binary_location = firefoxpath
-    options.add_argument("--headless=new")
-    options.add_argument('--disable-gpu')
+        # Set preferences directly in the options
+        #options.profile = webdriver.FirefoxProfile()
+        #options.add_argument("--headless=old")
+        #options.add_argument('--disable-gpu')
 
-    driver = webdriver.Firefox()
-    driver.get(url)
 
-    # First element (checkbox)
-    checkbox_id = "MaterialArchive__noTable__cbv__AgreeCheck"
-    checkbox = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, checkbox_id))
-    )
+        driver = webdriver.Chrome(options = options)
+        driver.get(url)
 
-    print("Checkbox Element", checkbox.text)
-    checkbox.click()
+        # First element (checkbox)
+        checkbox_id = "MaterialArchive__noTable__cbv__AgreeCheck"
+        checkbox = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, checkbox_id))
+        )
 
-    # Second element (dropdown)
-    dropdown_id = "MaterialArchive__noTable__sbv__ViewType"
-    dropdown = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, dropdown_id))
-    )
-    print("Dropdown Element", dropdown.text)
+        print("Checkbox Element", checkbox.text)
+        checkbox.click()
 
-    # Use Select class to interact with the dropdown
-    select = Select(dropdown)
+        # Second element (dropdown)
+        dropdown_id = "MaterialArchive__noTable__sbv__ViewType"
+        dropdown = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, dropdown_id))
+        )
+        print("Dropdown Element", dropdown.text)
 
-    # Replace "Your Desired Option" with the actual text of the option you want to select
-    select.select_by_visible_text(papertype)
+        # Use Select class to interact with the dropdown
+        select = Select(dropdown)
 
-    yeardropdown_id = "MaterialArchive__noTable__sbv__YearSelect"
-    yeardropdown = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, yeardropdown_id))
-    )
+        # Replace "Your Desired Option" with the actual text of the option you want to select
+        select.select_by_visible_text(papertype)
 
-    select = Select(yeardropdown)
+        yeardropdown_id = "MaterialArchive__noTable__sbv__YearSelect"
+        yeardropdown = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, yeardropdown_id))
+        )
 
-    select.select_by_visible_text(year)
+        select = Select(yeardropdown)
 
-    examdropdown_id = "MaterialArchive__noTable__sbv__ExaminationSelect"
-    examdropdown = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, examdropdown_id))
-    )
+        select.select_by_visible_text(year)
 
-    select = Select(examdropdown)
+        examdropdown_id = "MaterialArchive__noTable__sbv__ExaminationSelect"
+        examdropdown = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, examdropdown_id))
+        )
 
-    select.select_by_visible_text(exam)
+        select = Select(examdropdown)
 
-    subjectdropdown_id = "MaterialArchive__noTable__sbv__SubjectSelect"
-    subjectdropdown = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, subjectdropdown_id))
-    )
+        select.select_by_visible_text(exam)
 
-    select = Select(subjectdropdown)
+        subjectdropdown_id = "MaterialArchive__noTable__sbv__SubjectSelect"
+        subjectdropdown = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, subjectdropdown_id))
+        )
 
-    select.select_by_visible_text(subject)
+        select = Select(subjectdropdown)
 
-    td_element = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, "//td[@class='materialbody'][2]"))
-    )
+        select.select_by_visible_text(subject)
 
-    a_element = td_element.find_element(By.TAG_NAME, 'a')
+        td_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, "//td[@class='materialbody'][2]"))
+        )
 
-    a_element.click()
+        a_element = td_element.find_element(By.TAG_NAME, 'a')
 
-    new_window = driver.window_handles[-1]
-    driver.switch_to.window(new_window)
+        a_element.click()
 
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'viewerContainer')))
+        new_window = driver.window_handles[-1]
+        driver.switch_to.window(new_window)
 
-    pdf_url = driver.current_url
-    
-    pdf_content = download_pdf(pdf_url)
+        #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'viewerContainer')))
 
-    driver.quit()
+        pdf_url = driver.current_url
 
-    # Save the PDF to a file (adjust file path as needed)
-    pdf_path = "downloaded_pdf.pdf"
-    with open(pdf_path, 'wb') as pdf_file:
-        pdf_file.write(pdf_content.getvalue())
+        pdf_content = download_pdf(pdf_url)
 
-    # Search and capture pages
-    search_and_capture_page(pdf_path, searchterm, output_path, year)
+        driver.quit()
 
-    
+        # Save the PDF to a file (adjust file path as needed)
+        pdf_path = "downloaded_pdf.pdf"
+        with open(pdf_path, 'wb') as pdf_file:
+            pdf_file.write(pdf_content.getvalue())
 
-SearchPage(subject, year)
+        # Search and capture pages
+        search_and_capture_page(pdf_path, searchterm, output_path, year)
+
+
+
+
+threads = []
+years = input("Years to search inclusive: (format example: 2017-2020): ")
+yearbounds = years.split("-")
+years_to_search = list()
+for x in range((int(yearbounds[1])-int(yearbounds[0]))+1):
+    years_to_search.append(int(yearbounds[0])+x) 
+
+for targetyear in years_to_search:
+    thread = threading.Thread(target=SearchPage, args=(subject, str(targetyear)))
+    threads.append(thread)
+    thread.start()
+    time.sleep(5)
+
+for thread in threads:
+    thread.join()
+
+print("All searches completed.")
+
 
 
 
