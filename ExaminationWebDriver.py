@@ -15,6 +15,8 @@ from selenium.common.exceptions import StaleElementReferenceException
 import time
 import re
 import threading
+import os
+import shutil
 
 
 
@@ -33,6 +35,27 @@ if numberofthreads != None:
 else:
     semaphore = threading.BoundedSemaphore(value=4)
 
+def delete_all_items(folder_path):
+    items = os.listdir(folder_path)
+    print(items)
+    
+    for item in items:
+        item_path = os.path.join(folder_path, item)
+        try:
+            if os.path.isfile(item_path):
+                # If it's a file, delete it
+                os.remove(item_path)
+                '''
+            elif os.path.isdir(item_path):
+                # If it's a directory, delete it and its contents recursively
+                delete_all_items(item_path)
+                '''
+        except Exception as e:
+            print(f"Error deleting {item_path}: {e}")
+            
+
+delete_all_items(output_path)
+
 def download_pdf(url):
     response = requests.get(url)
     return BytesIO(response.content)
@@ -46,11 +69,11 @@ def search_and_capture_page(pdf_path, search_term, output_path, year):
         keyword_instances = page.search_for(search_term)
 
         # Print the count of keyword instances on each page
-        print(f"Page {page_number + 1}, Keyword Instances: {len(keyword_instances)}")
+        #print(f"Page {page_number + 1}, Keyword Instances: {len(keyword_instances)}")
 
         if keyword_instances:
             # Print the type of keyword_instances[0]
-            print(type(keyword_instances[0]))
+            #print(type(keyword_instances[0]))
 
             # Get the Pixmap of the entire page
             pixmap = page.get_pixmap()
@@ -87,7 +110,7 @@ def SearchPage(subject, year):
             EC.element_to_be_clickable((By.ID, checkbox_id))
         )
 
-        print("Checkbox Element", checkbox.text)
+        #print("Checkbox Element", checkbox.text)
         checkbox.click()
 
         # Second element (dropdown)
@@ -95,7 +118,7 @@ def SearchPage(subject, year):
         dropdown = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, dropdown_id))
         )
-        print("Dropdown Element", dropdown.text)
+        #print("Dropdown Element", dropdown.text)
 
         # Use Select class to interact with the dropdown
         select = Select(dropdown)
@@ -171,7 +194,7 @@ for targetyear in years_to_search:
     thread = threading.Thread(target=SearchPage, args=(subject, str(targetyear)))
     threads.append(thread)
     thread.start()
-    time.sleep(5)
+    time.sleep(10)
 
 for thread in threads:
     thread.join()
