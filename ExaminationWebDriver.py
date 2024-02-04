@@ -194,7 +194,7 @@ for targetyear in years_to_search:
     thread = threading.Thread(target=SearchPage, args=(subject, str(targetyear)))
     threads.append(thread)
     thread.start()
-    time.sleep(10)
+    time.sleep(20)
 
 for thread in threads:
     thread.join()
