@@ -10,6 +10,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import StaleElementReferenceException
+from queue import Queue
 
 
 import time
@@ -23,17 +24,26 @@ import shutil
 
 output_path = 'output'
 papertype = "Exam Papers"
-subject = input("Subject (case sensitive): ")
+subject = input("Subject (case sensitive): ").strip()
 #subject = "Biology"
 year = "2022"
 exam = "Leaving Certificate"
-searchterm = input("Search term: ")
+searchterm = input("Search term: ").strip()
 #searchterm = "diagram"
-numberofthreads = input("Number of threads (advanced setting, 2 is default):" )
-if numberofthreads != None:
-    semaphore = threading.BoundedSemaphore(value=int(numberofthreads))
+numberoffetchthreads = input("Number of fetch threads (advanced setting, 2 is default):" ).strip()
+numberofprocessthreads = input("Number of processing threads (advanced setting, 2 is default):" ).strip()
+
+fetch_queue = Queue()
+
+if numberoffetchthreads != None:
+    print(f"threads = {numberoffetchthreads}")
+    fetchsemaphore = threading.BoundedSemaphore(value=int(numberoffetchthreads))
 else:
-    semaphore = threading.BoundedSemaphore(value=4)
+    print("threads = 2")
+    fetchsemaphore = threading.BoundedSemaphore(value=2)
+
+fetch_threads_complete = threading.Event()
+
 
 def delete_all_items(folder_path):
     items = os.listdir(folder_path)
@@ -87,7 +97,7 @@ def search_and_capture_page(pdf_path, search_term, output_path, year):
 
 
 def SearchPage(subject, year):
-    with semaphore:
+    with fetchsemaphore:
         firefoxpath = 'D:\\Program Files\\Mozilla Firefox\\firefox.exe'
         chromepath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
         url = 'https://www.examinations.ie/exammaterialarchive/'
@@ -173,17 +183,18 @@ def SearchPage(subject, year):
         driver.quit()
 
         # Save the PDF to a file (adjust file path as needed)
-        pdf_path = "downloaded_pdf.pdf"
+        pdf_path = f"downloaded_pdf_{year}.pdf"
         with open(pdf_path, 'wb') as pdf_file:
             pdf_file.write(pdf_content.getvalue())
 
         # Search and capture pages
-        search_and_capture_page(pdf_path, searchterm, output_path, year)
+        #search_and_capture_page(pdf_path, searchterm, output_path, year)
 
 
 
 
-threads = []
+fetchthreads = []
+processthreads = []
 years = input("Years to search inclusive: (format example: 2017-2020): ")
 yearbounds = years.split("-")
 years_to_search = list()
@@ -192,11 +203,19 @@ for x in range((int(yearbounds[1])-int(yearbounds[0]))+1):
 
 for targetyear in years_to_search:
     thread = threading.Thread(target=SearchPage, args=(subject, str(targetyear)))
-    threads.append(thread)
+    fetchthreads.append(thread)
     thread.start()
-    time.sleep(20)
+time.sleep(10)
 
-for thread in threads:
+for year in years_to_search:
+    processingthread = threading.Thread(target = search_and_capture_page, args=(f"downloaded_pdf_{year}.pdf", searchterm, output_path, year))
+    processthreads.append(processingthread)
+    processingthread.start()
+
+for thread in fetchthreads:
+    thread.join()
+
+for thread in processthreads:
     thread.join()
 
 print("All searches completed.")
