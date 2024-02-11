@@ -29,6 +29,7 @@ subject = input("Subject (case sensitive): ").strip()
 year = "2022"
 exam = "Leaving Certificate"
 searchterm = input("Search term: ").strip()
+linkstoclick = input("Which links should be clicked on? (0,2,3,4,5 (starts at 0)): ").strip()
 #searchterm = "diagram"
 numberoffetchthreads = input("Number of fetch threads (advanced setting, 2 is default):" ).strip()
 numberofprocessthreads = input("Number of processing threads (advanced setting, 2 is default):" ).strip()
@@ -71,7 +72,7 @@ def download_pdf(url):
     return BytesIO(response.content)
 
 # Function to search for a term and capture the page
-def search_and_capture_page(pdf_path, search_term, output_path, year):
+def search_and_capture_page(pdf_path, search_term, output_path, year, index):
     pdf_document = fitz.open(pdf_path)
     
     for page_number in range(pdf_document.page_count):
@@ -89,7 +90,7 @@ def search_and_capture_page(pdf_path, search_term, output_path, year):
             pixmap = page.get_pixmap()
 
             # Write the Pixmap to a PNG file
-            screenshot_path = f"{output_path}/{search_term}_in_{year}_page_{page_number + 1}.png"
+            screenshot_path = f"{output_path}/{search_term}_in_{year}_page_{page_number + 1}_{index}.png"
             pixmap.save(screenshot_path)
             print(f"Screenshot saved at: {screenshot_path}")    
 
@@ -163,33 +164,83 @@ def SearchPage(subject, year):
 
         select.select_by_visible_text(subject)
 
-        td_element = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "//td[@class='materialbody'][2]"))
+        td_elements = WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.XPATH, "//td[@class='materialbody']"))
         )
 
-        a_element = td_element.find_element(By.TAG_NAME, 'a')
-        print("link:", a_element)
+        links = [int(link) for link in linkstoclick.split(",")]
+        index = 0
+        for td_element in td_elements:
+            print(f"Content of td element: {td_element.text}")
 
-        a_element.click()
+            if "Click Here" in td_element.text:
+                a_element = td_element.find_element(By.TAG_NAME, 'a')
+                print(a_element.text)
+                #a_element.click()
+                print(index,links)
 
-        new_window = driver.window_handles[-1]
-        driver.switch_to.window(new_window)
+                if index in links:
+                    a_element.click()
+                    new_window = driver.window_handles[-1]
+                    driver.switch_to.window(new_window)
+                    pdf_url = driver.current_url
+                    pdf_content = download_pdf(pdf_url)
+                    driver.switch_to.window(driver.window_handles[0])
+
+                    pdf_path = f"downloaded_pdf_{year}_{index}.pdf"
+                    with open(pdf_path, 'wb') as pdf_file:
+                        pdf_file.write(pdf_content.getvalue())
+                     #Search and capture pages
+                    search_and_capture_page(pdf_path, searchterm, output_path, year, index)
+                index += 1
+
+                   
+
+
+
+        
+
+        '''for td_element in td_elements:
+            a_element = WebDriverWait(td_element, 10).until(
+                EC.element_to_be_clickable((By.TAG_NAME, 'a'))
+            )
+            
+            a_element = td_element.find_element(By.TAG_NAME, 'a')
+            #print("link:", a_element.text)
+
+            a_element.click()
+
+            new_window = driver.window_handles[-1]
+            driver.switch_to.window(new_window)
+
+            driver.switch_to.window(driver.window_handles[0])'''
+
+        '''links = linkstoclick.split(",")
+        linkcounter = 0
+        for td_element in td_elements:
+            a_element = td_element.find_element(By.TAG_NAME, 'a')
+            time.sleep(5)
+            # Perform an action with a_element, for example, click
+            if links.__contains__(linkcounter):
+                
+                a_element.click()
+                time.sleep(5)
+
+                new_window = driver.window_handles[-1]
+                time.sleep(5)
+                driver.switch_to.window(new_window)
+                time.sleep(5)'''
 
         #WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'viewerContainer')))
 
-        pdf_url = driver.current_url
+        #pdf_url = driver.current_url
 
-        pdf_content = download_pdf(pdf_url)
+        #pdf_content = download_pdf(pdf_url)
 
-        driver.quit()
+        #driver.switch_to.window(driver.window_handles[0])
 
         # Save the PDF to a file (adjust file path as needed)
-        pdf_path = f"downloaded_pdf_{year}.pdf"
-        with open(pdf_path, 'wb') as pdf_file:
-            pdf_file.write(pdf_content.getvalue())
-
-        #Search and capture pages
-        search_and_capture_page(pdf_path, searchterm, output_path, year)
+        
 
 
 
