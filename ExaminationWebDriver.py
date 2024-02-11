@@ -35,7 +35,7 @@ numberofprocessthreads = input("Number of processing threads (advanced setting, 
 
 fetch_queue = Queue()
 
-if numberoffetchthreads != None:
+if numberoffetchthreads != "":
     print(f"threads = {numberoffetchthreads}")
     fetchsemaphore = threading.BoundedSemaphore(value=int(numberoffetchthreads))
 else:
@@ -168,6 +168,7 @@ def SearchPage(subject, year):
         )
 
         a_element = td_element.find_element(By.TAG_NAME, 'a')
+        print("link:", a_element)
 
         a_element.click()
 
@@ -187,8 +188,8 @@ def SearchPage(subject, year):
         with open(pdf_path, 'wb') as pdf_file:
             pdf_file.write(pdf_content.getvalue())
 
-        # Search and capture pages
-        #search_and_capture_page(pdf_path, searchterm, output_path, year)
+        #Search and capture pages
+        search_and_capture_page(pdf_path, searchterm, output_path, year)
 
 
 
@@ -207,16 +208,16 @@ for targetyear in years_to_search:
     thread.start()
 time.sleep(10)
 
-for year in years_to_search:
-    processingthread = threading.Thread(target = search_and_capture_page, args=(f"downloaded_pdf_{year}.pdf", searchterm, output_path, year))
-    processthreads.append(processingthread)
-    processingthread.start()
+#for year in years_to_search:
+    #processingthread = threading.Thread(target = search_and_capture_page, args=(f"downloaded_pdf_{year}.pdf", searchterm, output_path, year))
+    #processthreads.append(processingthread)
+    #processingthread.start()
 
 for thread in fetchthreads:
     thread.join()
 
-for thread in processthreads:
-    thread.join()
+#for thread in processthreads:
+    #thread.join()
 
 print("All searches completed.")
 
